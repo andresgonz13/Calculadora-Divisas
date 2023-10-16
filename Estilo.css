@@ -14,6 +14,14 @@ sub {
     font-weight: bold;
     font-style: italic;
 }
+.resultado-box {
+    background-color: lime ;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+	outline: 2px solid black;
+        }
 
 .container {
     width: 300px;
@@ -57,3 +65,4 @@ a {
 a:hover {
     text-decoration: underline;
 }
+

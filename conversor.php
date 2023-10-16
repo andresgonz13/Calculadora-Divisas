@@ -4,28 +4,22 @@
     <title>Conversor de Moneda</title>
     <link rel="stylesheet" type="text/css" href="estilo.css">
     <meta charset="UTF-8">
-    <style>
-        .resultado-box {
-            background-color: #ECF0F1;
-            padding: 10px;
-            border-radius: 5px;
-            text-align: center;
-            font-weight: bold;
-        }
-    </style>
 </head>
 <body>
     <div class="container">
         <h2>Conversor de Moneda</h2>
+		<hr />
         <form id="conversion-form" method="post">
             <input type="number" name="monto" placeholder="Monto">
-            <input type="number" name "tasa" placeholder="Tasa de Cambio (Precio del dólar)">
+            <input type="number" name="tasa" placeholder="Tasa de Cambio (Precio del dólar)">
             <select name="conversion">
                 <option value="bolivares_a_dolares">Bolívares a Dólares</option>
                 <option value="dolares_a_bolivares">Dólares a Bolívares</option>
             </select>
             <button type="submit">Convertir</button>
         </form>
+		<hr />
+		<br>
         <div id="resultado" class="resultado-box">
             <?php
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -55,10 +49,12 @@
                     $tipoCambio = "Bs."; // Bolívares
                 }
 
-                echo "Resultado: <div>$ " . number_format($resultado, 2) . " " . $tipoCambio . "</div>";
+                echo "Resultado: <div> " . number_format($resultado, 2) . $tipoCambio . "</div>";
             }
             ?>
         </div>
+		<br>
+		<hr />
         <sub>Por: Andrés González</sub>
         <br>
         <sub>Informática T2-INF-1</sub>
