@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('fondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+sub {
+    line-height: 0.8;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.container {
+    width: 300px;
+    background-color: #ECF0F1;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+input, select, button {
+    margin: 10px 0;
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+    display: block;
+    margin-top: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
